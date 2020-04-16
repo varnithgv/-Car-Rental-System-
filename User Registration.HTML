@@ -1,0 +1,36 @@
+<html>
+<head>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <?php include('header.php'); ?>
+  <div class="back_img">
+  <div class="back">
+  <center>
+  <div class="contact_form">
+  <form name="f1" method="post">
+<center>Sign Up</center>
+<br>
+<input type="text" name="name" placeholder="Name" required ><br>
+<input type="email" name="email" placeholder="Email" required ><br>
+<input type="text" name="username" placeholder="Username" required ><br>
+<input type="password" name="password" placeholder="Password" required ><br><br>
+<input type="radio" value="male" name="gender">Male
+<input type="radio" value="female" name="gender">Female
+<select  name="city" placeholder="select city" required>
+<option value="Bangalore">Bangalore</option>
+<option value="Hosur">Hosur</option>
+<option value="Tumkur">Tumkur</option>
+<option value="Hoskote">Hoskote</option>
+</select><br><br>
+<input type="text"  name="number" pattern=[0-9]{10}placeholder="number" required> <br>
+<br>
+<input type="submit" value="SIGN UP" name="submit">
+  </form>
+  </div>
+  </center>
+   </div>
+  </div>
+  <?php include('footer.html'); ?>
+</body>
+</html>

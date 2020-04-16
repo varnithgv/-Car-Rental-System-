@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="admin_home.css">
+</head>
+<body>
+<?php include'header.html'; ?>
+<table>
+<tr>
+<th>Car name</th>
+<th>Rent</th>
+<th>Reg. year</th>
+<th>Seats</th>
+<th>Fuel</th>
+<th>Image</th>
+<th>A/C</th>
+<th>Automatic gear</th>
+<th>Airbags</th>
+</tr>
+<tr>
+<td><?php echo $row['car_name']; ?></td>
+<td><?php echo $row['rent']; ?>/day</td>
+<td><?php echo $row['reg_year']; ?></td>
+<td><?php echo $row['seats']; ?></td>
+<td><?php echo $row['fuel_type']; ?></td>
+<td><?php echo $row['image']; ?></td>
+<td><?php echo $row['ac']; ?></td>
+<td><?php echo $row['automatic_gear']; ?></td>
+<td><?php echo $row['air_bag']; ?></td>
+
+<td><a href="update.php?car_id=<?php echo $row['car_id']; ?>">
+<input type="button" value="Update" ></a></td>
+<td>
+<a href="delete.php?car_id=<?php echo $row['car_id']; ?>"><input type="submit" value="Delete"></td>
+</tr>
+<?php } ?>
+</table>
+<?php include'footer.html'; ?>
+</body>
+</html>

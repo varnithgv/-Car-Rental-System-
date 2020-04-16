@@ -1,0 +1,30 @@
+<html>
+<head>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<?php include('header.php'); ?> 
+<div class="container">
+<div class="box-2">
+    <h1>Your booking has been confirmed!</h1>
+    <br>
+    <h2 style="padding:0px 25px;">Your driver:</h2>
+    <table>
+	<tr>
+		<td>Name</td>
+		<td><?php echo $a ?></td>
+	</tr>
+	<tr>
+		<td>Contact no.</td>
+		<td><?php echo $b ?></td>
+		</tr>
+   <tr>
+       <td>DL Number</td>
+       <td><?php echo $c ?></td>
+   </tr>
+    </table>
+</div>
+</div>
+<?php include('footer.html'); ?>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+  <link rel="stylesheet" href="home.css">
+  <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+</head>
+<body>
+<?php include('header.html'); ?>
+<div class="back_img">
+<div class="back">
+<div class="contact_form">
+<form method="post">
+<table>
+<tr>
+<td>Car ID</td>
+<td><input type="text" name="car_id" value='<?php echo $a ?>' readonly ></td>
+</tr>
+<tr>
+<td>Car Name</td>
+<td><input type="text" name="car_name" value='<?php echo $b ?>'></td>
+</tr>
+<tr>
+<td>Reg. Year</td>
+<td><input type="text" name="reg_year" value='<?php echo $c ?>'></td>
+</tr>
+<tr>
+<td>Fuel type</td>
+<td><input type="text" name="fuel_type" value='<?php echo $d ?>'></td>
+</tr>
+<tr>
+<td>Rent</td>
+<td><input type="text" name="rent" value='<?php echo $g ?>'></td>
+</tr>
+<tr>
+<td>Seats</td>
+<td><input type="text" name="seats" value='<?php echo $e ?>'></td>
+</tr>
+<tr>
+<td>Image</td>
+<td><input type="text" name="image" value='<?php echo $f ?>'></td>
+</tr>
+<tr>
+<td>A/C</td>
+<td><input type="text" name="x1" value='<?php echo $c1 ?>'></td>
+</tr>
+<tr>
+<td>Automatic gear</td>
+<td><input type="text" name="x2" value='<?php echo $c2 ?>'></td>
+</tr>
+<tr>
+<td>Airbags</td>
+<td><input type="text" name="x3" value='<?php echo $c3 ?>'></td>
+</tr>
+</table>
+<input type="submit" value="Update" name="submit">
+</form>
+</div>
+</div>
+</div>
+<?php include('footer.html'); ?>
+</body>
+</html>

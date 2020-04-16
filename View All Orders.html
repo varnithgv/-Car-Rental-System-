@@ -1,0 +1,34 @@
+<html>
+<head>
+   <link rel="stylesheet" href="admin_home.css">
+</head>
+<body>
+<?php include('header.html'); ?>
+<table>
+<tr>
+<th>Order No.</th>
+<th>Username</th>
+<th>Car id</th>
+<th>Duration</th>
+<th>Total cost</th>
+<th>Contact no</th>
+<th>Delivery date</th>
+<th>Delivery address</th>
+<th>Payment mode</th>
+</tr>
+<tr>
+<td><?php echo $row['order_no']; ?></td>
+<td><?php echo $row['username']; ?></td>
+<td><?php echo $row['car_id']; ?></td>
+<td><?php echo $row['lease_duration']; ?></td>
+<td><?php echo $row['total_rent']; ?></td>
+<td><?php echo $row['contact_no']; ?></td>
+<td><?php echo $row['delivery_date']; ?></td>
+<td><?php echo $row['delivery_address']; ?></td>
+<td><?php echo $row['payment_mode']; ?></td>
+</tr>
+<?php } ?>
+</table>
+<?php include('footer.html'); ?>
+</body>
+</html>
